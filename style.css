@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --clr-bg: rgb(254, 228, 227);
+    --ff: 'Fira Sans', sans-serif;
+    --clr-text:hsl(359, 95%, 15%);
+    --clr-shadow:hsl(359, 80%, 10%);
+}
+body{
+    background:var(--clr-bg);
+    font-family: var(--ff);
+    color:var(--clr-text);
+}
+.countdown{
+    display:grid;
+    grid-template-areas:"title title title title " 
+                        "giorno_n ora_n minuto_n secondo_n"
+                        "giorno ora minuto secondo";
+    margin: 4rem 25vw;
+    position: relative;
+    text-align:center;
+}
+#title{
+    grid-area:title;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 3rem;
+    letter-spacing:2px;
+    text-shadow: 2px 2px 2px var(--clr-shadow),
+                 3px 3px 5px hsla(359, 80%, 40%, 0.616),
+                 -5px -5px 7px hsla(359, 80%, 30%, 0.316);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* .time{
+    text-align: center
+} */
+.image{
+    display:block;
+    margin: -3rem auto;
+    height: 60vh;
+    z-index: -1;
+
+}
+.Follow{
+    position:fixed;
+    display:block;
+    bottom: 1vh;
+    margin: 0 auto;
+    left:40vw;
+}
+
+#logoTwit{
+    left:48vw;
+}
+#twitter{
+    left:49vw;
+}
+#logoGit{
+    left:54vw;
+}
+#github{
+    left:55.25vw;
+}
+.paragraph{
+    font-weight: 500;
+}
+.link{
+    color:var(--clr-text);
+    text-decoration: none;
+    font-weight: 500;
+}
+.link:hover{
+    text-decoration:underline;
+}
+.time{
+    font-size: 0.90em;
+    font-weight: normal;
+}
+#reset{
+    padding: .75rem 1.5rem;
+    background: var(--clr-bg);
+    border: 2px solid var(--clr-text);
+    font-weight: 700;
+    color:var(--clr-text);
+    transition: background 250ms ease-in,
+                color 250ms ease-in;
+    position:absolute;
+    top: 14.5rem;
+    left:44vw;
+    border-radius: 1em;
+}
+#reset:hover{
+    cursor: pointer;
+    background:var(--clr-text);
+    color: var(--clr-bg);
+}
