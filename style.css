@@ -100,3 +100,29 @@ body{
     background:var(--clr-text);
     color: var(--clr-bg);
 }
+@media screen and (max-width: 600px) {
+    #reset{
+        position: relative;
+        top:-25em;
+        left:35vw;
+    }
+    .Follow{
+        position:fixed;
+        display:block;
+        bottom: 1vh;
+        margin: 0 auto;
+        left:20vw;
+    }
+    #logoTwit{
+        left:37vw;
+    }
+    #twitter{
+        left:39vw;
+    }
+    #logoGit{
+        left:50vw;
+    }
+    #github{
+        left:52.725vw;
+    }
+  }
